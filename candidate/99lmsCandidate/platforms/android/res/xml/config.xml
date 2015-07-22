@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.99lms.candidate" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <preference name="loglevel" value="DEBUG" />
+    <name>99LMS</name>
+    <description>
+        LMS application for candidates.
+    </description>
+    <author email="support@99lms.com" href="http://99lms.com">
+        99lms.com
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+</widget>
