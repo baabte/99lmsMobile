@@ -1,39 +1,87 @@
-<html>
+<!DOCTYPE html>
+<html ng-app="candidate">
 <head>
-	<!-- <title></title> -->
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-	 <link href="css/roboto.min.css" rel="stylesheet">
-     <link href="css/material.min.css" rel="stylesheet">
-     <link href="css/ripples.min.css" rel="stylesheet">
-     <link href="css/colors.css" rel="stylesheet">
-     <link href="css/customstyles.css" rel="stylesheet">
-     <link href="css/font.css" rel="stylesheet">
-     <link href="css/font-awesome.min.css" rel="stylesheet">
-     <link href="css/app.css" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+  <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+  <link href="app.less" type="text/css" rel="stylesheet/less">
+  <!-- build:css(.) css/baabtra.min.css -->
+  <!-- bower:css -->
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+  <link rel="stylesheet" href="bower_components/template/dist/animate.css" />
+  <link rel="stylesheet" href="bower_components/template/dist/bootstrap.css" />
+  <link rel="stylesheet" href="bower_components/template/dist/bootstrap-additions.css" />
+  <link rel="stylesheet" href="bower_components/template/dist/angular-motion.css" />
+  <link rel="stylesheet" href="bower_components/template/dist/themify-icons.css" />
+  <link rel="stylesheet" href="bower_components/template/dist/font-awesome.min.css" />
+  <link rel="stylesheet" href="bower_components/template/dist/font.css" />
+  <link rel="stylesheet" href="bower_components/template/dist/app.css" />
+  <link rel="stylesheet" href="bower_components/template/dist/loading-bar.css" />
+  <link rel="stylesheet" href="bower_components/template/dist/customstyles.css" />
+  <link rel="stylesheet" href="bower_components/template/dist/timeLine.css" />
+  <link rel="stylesheet" href="bower_components/template/dist/colors.css" />
+  <link rel="stylesheet" href="bower_components/bootstrap-material-design/dist/css/material.css" />
+  <link rel="stylesheet" href="bower_components/bootstrap-material-design/dist/css/ripples.css" />
+  <link rel="stylesheet" href="bower_components/bootstrap-material-design/dist/css/material-fullpalette.css" />
+  <!-- endbower -->
+  <!-- endbuild -->
 </head>
-<body >
-
-<nav class="navbar navbar-white p-xs">
-    <div class="navbar-header">
-        <div class="col-xs-9">
-            <img class="img-responsive" src="img/logo.png">
-        </div>
-        <div class="col-xs-2 pull-right">
-            
-        </div>
-        
-        <!-- <a class="navbar-brand" href="javascript:void(0)"></a> -->
-    </div>
-
-</nav>
+<body class="no-padding">
 
 
 
-<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
-<script type="text/javascript" src="js/template.min.js"></script>
-<script type="text/javascript" src="js/bootstrap.min.js"></script>
-<script src="js/ripples.min.js"></script>
-<script src="js/material.min.js"></script>
+
+  
+  <!-- content -->
+  
+  <div  id="content" role="main" class="h-full" ui-view>
+
+  </div>
+  <!-- / content -->
+
+  <!-- footer -->
+<!--   <footer id="footer" class="app-footer" role="footer" ng-include="'views/footer.html'">
+  </footer> -->
+
+
+
+
+  <!-- Livereload script for development only (stripped during dist build) -->
+  <script src="http://localhost:35729/livereload.js" data-concat="false"></script>
+
+  <!-- build:js(.) js/script.min.js -->
+  <!-- bower:js -->
+  <script src="bower_components/jquery/jquery.js"></script>
+  <script src="bower_components/underscore/underscore.js"></script>
+  <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+  <script src="bower_components/angular-animate/angular-animate.js"></script>
+  <script src="bower_components/angular-resource/angular-resource.js"></script>
+  <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+  <script src="bower_components/angular-mocks/angular-mocks.js"></script>
+  <script src="bower_components/angular-ui-utils/ui-utils.js"></script>
+  <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+  <script src="bower_components/moment/moment.js"></script>
+  <script src="bower_components/template/dist/template.min.js"></script>
+  <script src="bower_components/bootstrap-material-design/dist/js/material.js"></script>
+  <script src="bower_components/bootstrap-material-design/dist/js/ripples.js"></script>
+  <!-- endbower -->
+
+  <!-- Main App JS -->
+  <script type="text/javascript" src="cordova.js"></script>
+  <script src="app.js"></script>
+  <script src="angularModules/home/partials/Partial-home.js"></script>
+  <script src="angularModules/splashScreen/partials/Partial-splash.js"></script>
+  <script src="angularModules/common/hideForSplash/directives/Directive-hideForSplash.js"></script>
+  <!-- Add New Component JS Above -->
+  <!-- endbuild -->
+<script type="text/javascript">
+
+document.addEventListener("deviceready", function () {
+  alert('ready');
+}, false);
+</script>
+
 </body>
 </html>
