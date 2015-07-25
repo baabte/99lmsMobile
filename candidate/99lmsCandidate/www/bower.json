@@ -22,6 +22,7 @@
     "moment": "~2.5",
     "template": "~0.1.0",
     "font-awesome": "~4.0",
-    "bootstrap-material-design": "~0.3.0"
+    "bootstrap-material-design": "~0.3.0",
+    "ngCordova": "~0.1.17-alpha"
   }
 }
