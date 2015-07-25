@@ -22,12 +22,27 @@ module.exports = [
             "navigator.connection",
             "navigator.network.connection"
         ]
+    },
+    {
+        "file": "plugins/cordova-plugin-dialogs/www/notification.js",
+        "id": "cordova-plugin-dialogs.notification",
+        "merges": [
+            "navigator.notification"
+        ]
+    },
+    {
+        "file": "plugins/cordova-plugin-dialogs/www/browser/notification.js",
+        "id": "cordova-plugin-dialogs.notification_browser",
+        "merges": [
+            "navigator.notification"
+        ]
     }
 ];
 module.exports.metadata = 
 // TOP OF METADATA
 {
-    "cordova-plugin-network-information": "1.0.2-dev"
+    "cordova-plugin-network-information": "1.0.2-dev",
+    "cordova-plugin-dialogs": "1.1.2-dev"
 }
 // BOTTOM OF METADATA
 });

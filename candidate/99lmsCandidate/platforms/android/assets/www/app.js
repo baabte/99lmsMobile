@@ -21,7 +21,7 @@ angular.module('candidate').config(['$stateProvider', '$urlRouterProvider',funct
         controller:'SplashCtrl'
     });
     /* Add New States Above */
-    $urlRouterProvider.otherwise('/home');
+    $urlRouterProvider.otherwise('/');
 
 }]);
 
