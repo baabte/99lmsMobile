@@ -19,7 +19,17 @@ angular.module('candidate').config(['$stateProvider', '$urlRouterProvider',funct
         url: '/',
         templateUrl: 'angularModules/splashScreen/partials/Partial-splash.html',
         controller:'SplashCtrl'
+    })
+    .state('login', {
+        url: '/login',
+        views: {
+            '': {
+                templateUrl: 'angularModules/login/partials/Partial-login.html',
+                controller:''
+            }
+        }
     });
+    ;
     /* Add New States Above */
     $urlRouterProvider.otherwise('/');
 
