@@ -11,7 +11,8 @@ angular.module('candidate').config(['$stateProvider', '$urlRouterProvider',funct
         views: {
                   // So this one is targeting the unnamed view within the parent state's template.
              '': {
-                   templateUrl: 'angularModules/home/partials/Partial-home.html'
+                   templateUrl: 'angularModules/home/partials/Partial-home.html',
+                   controller:'HomeCtrl'
                  }
         }
     })
@@ -25,7 +26,16 @@ angular.module('candidate').config(['$stateProvider', '$urlRouterProvider',funct
         views: {
             '': {
                 templateUrl: 'angularModules/login/partials/Partial-login.html',
-                controller:''
+                controller:'LoginCtrl'
+            }
+        }
+    })
+    .state('app', {
+        url: '/app',
+        views: {
+            '': {
+                templateUrl: 'angularModules/appHome/partials/Partial-app.html',
+                controller:'AppCtrl'
             }
         }
     });
