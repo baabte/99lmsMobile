@@ -4,7 +4,7 @@ document.addEventListener("deviceready", function () {
  
 	// var type = $cordovaNetwork.getNetwork();
 
-    var isOnline = $cordovaNetwork.isOnline();
+    var isOnline =$cordovaNetwork.isOnline();
 
     setTimeout(function (argument) {
     	if(isOnline){
