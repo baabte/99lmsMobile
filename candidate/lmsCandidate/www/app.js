@@ -1,4 +1,4 @@
-angular.module('candidate', ['ui.bootstrap','ui.utils','ui.router','ngAnimate','ngCordova']);
+angular.module('candidate', ['ui.bootstrap','ui.utils','ui.router','ngAnimate','ngCordova','LocalStorageModule','ngStorage','ngTouch']);
 
 
 
@@ -58,4 +58,16 @@ angular.module('candidate').run(['$rootScope',function($rootScope) {
         }
     };
 
-}]);
+}])
+.constant('bbConfig',{ //used for storing enviornment variables
+  "BWS": "http://service.99lms.com/",//server - production
+
+     "SARID":1, // SuperAdminRoleID
+     "CURID":2, // CompanyUser
+     "MURID":3, // MenteeUser
+     "RURID":4,  // ResellerUser
+     "PUSRID":5,  // ParentUser
+     "CUSRID":6  // CollegeUser
+
+
+ });;

@@ -8,12 +8,12 @@ document.addEventListener("deviceready", function () {
 
     setTimeout(function (argument) {
     	if(isOnline){
-            navigator.notification.alert(
-			    'You are the winner!',  // message
-			    function(a){console.log(a)},         // callback
-			    'Game Over',            // title
-			    'Done'                  // buttonName
-			);
+   //          navigator.notification.alert(
+			//     'You are the winner!',  // message
+			//     function(a){console.log(a)},         // callback
+			//     'Game Over',            // title
+			//     'Done'                  // buttonName
+			// );
     	}else{
     		
     	}
