@@ -16,6 +16,16 @@ $scope.loginFn = function() {
 						    'Ok'// buttonName
 						);
       			}
+      			else if(angular.equals($scope.logData.ActiveUserData,undefined)){
+      				// console.log($scope.logData.ActiveUserData.roleMappingObj);
+      				navigator.notification.alert(
+						'Invalid username or password, Please try again. ',// message
+						    function(a){console.log(a)},// callback
+						    'Sorry..!', // title
+						    'Ok'// buttonName
+						);	
+      			}
+
       			else if(!angular.equals($scope.logData.ActiveUserData.roleMappingObj.fkRoleId,3)){
       				// console.log($scope.logData.ActiveUserData.roleMappingObj);
       				navigator.notification.alert(
@@ -30,6 +40,7 @@ $scope.loginFn = function() {
 			   	  var logdata=$scope.logData.ActiveUserDataId.$oid.concat($scope.logData.userLoginId);
 			  	  // localStorageService.add('logDatas',logdata);
 			  	  localStorage['ls.logDatas']=logdata;
+			  	  localStorageService.add('activeUserData',$scope.logData);
 			  	  $rootScope.userinfo=$scope.logData;//if login is ok put it in the login info variable.
 		            // console.log($rootScope.userinfo);
 		           
