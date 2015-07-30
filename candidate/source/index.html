@@ -29,15 +29,19 @@
 <body class="no-padding">
 
 
+<<<<<<< HEAD
   <!-- header -->
   <header style="z-index:1050;" id="header"   class="h-full navbar bg-99lms-blue" role="menu" >
   </header>
   <!-- / header -->
+=======
+
+>>>>>>> 936f13231b7424d2261e41a5dc1fbe5038a57888
 
   
   <!-- content -->
   
-  <div  id="content" role="main" ui-view>
+  <div  id="content" role="main" class="h-full" ui-view>
 
   </div>
   <!-- / content -->
@@ -72,14 +76,17 @@
   <!-- endbower -->
 
   <!-- Main App JS -->
-  <!-- <script type="text/javascript" src="cordova.js"></script> -->
+  <script type="text/javascript" src="cordova.js"></script>
   <script src="app.js"></script>
   <script src="angularModules/home/partials/Partial-home.js"></script>
+  <script src="angularModules/splashScreen/partials/Partial-splash.js"></script>
+  <script src="angularModules/common/hideForSplash/directives/Directive-hideForSplash.js"></script>
   <!-- Add New Component JS Above -->
   <!-- endbuild -->
 <script type="text/javascript">
+
 document.addEventListener("deviceready", function () {
-  alert('hiiiii');
+  alert('ready');
 }, false);
 </script>
 
