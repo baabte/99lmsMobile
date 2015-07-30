@@ -47,7 +47,7 @@
 
 
   <!-- Livereload script for development only (stripped during dist build) -->
-  <script src="http://localhost:35729/livereload.js" data-concat="false"></script>
+<!--   // <script src="http://localhost:35729/livereload.js" data-concat="false"></script> -->
 
   <!-- build:js(.) js/script.min.js -->
   <!-- bower:js -->
@@ -66,6 +66,10 @@
   <script src="bower_components/template/dist/template.min.js"></script>
   <script src="bower_components/bootstrap-material-design/dist/js/material.js"></script>
   <script src="bower_components/bootstrap-material-design/dist/js/ripples.js"></script>
+  <script src="bower_components/ngCordova/dist/ng-cordova.js"></script>
+  <script src="bower_components/angular-local-storage/dist/angular-local-storage.js"></script>
+  <script src="bower_components/ngstorage/ngStorage.js"></script>
+  <script src="bower_components/angular-touch/angular-touch.js"></script>
   <!-- endbower -->
 
   <!-- Main App JS -->
@@ -74,13 +78,16 @@
   <script src="angularModules/home/partials/Partial-home.js"></script>
   <script src="angularModules/splashScreen/partials/Partial-splash.js"></script>
   <script src="angularModules/common/hideForSplash/directives/Directive-hideForSplash.js"></script>
+  <script src="angularModules/login/partials/Partial-login.js"></script>
+  <script src="angularModules/appHome/partials/Partial-app.js"></script>
+  <script src="angularModules/login/services/Service-login.js"></script>
   <!-- Add New Component JS Above -->
   <!-- endbuild -->
 <script type="text/javascript">
 
-document.addEventListener("deviceready", function () {
-  alert('ready');
-}, false);
+// document.addEventListener("deviceready", function () {
+//   alert('ready');
+// }, false);
 </script>
 
 </body>

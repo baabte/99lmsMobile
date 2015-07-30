@@ -1,4 +1,4 @@
-angular.module('candidate', ['ui.bootstrap','ui.utils','ui.router','ngAnimate']);
+angular.module('candidate', ['ui.bootstrap','ui.utils','ui.router','ngAnimate','ngCordova','cordovaNetwork']);
 
 
 

@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="io.cordova.hellocordova" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Candidate 99LMS</name>
+    <description>
+        Candidate application of 99lms.com
+    </description>
+    <author email="support@99lms.com" href="http://99lms.com">
+        99LMS team.
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+</widget>

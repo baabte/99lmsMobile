@@ -1,5 +1,5 @@
-angular.module('candidate').controller('SplashCtrl',function($scope){
+angular.module('candidate').controller('SplashCtrl',['$scope','$cordovaNetwork',function($scope,$cordovaNetwork){
 
 
 
-});
+}]);
