@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html ng-app="candidate">
+<head>
+  <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+  <link href="app.less" type="text/css" rel="stylesheet/less">
+  <!-- build:css(.) css/baabtra.min.css -->
+  <!-- bower:css -->
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+  <link rel="stylesheet" href="bower_components/template/dist/animate.css" />
+  <link rel="stylesheet" href="bower_components/template/dist/bootstrap.css" />
+  <link rel="stylesheet" href="bower_components/template/dist/bootstrap-additions.css" />
+  <link rel="stylesheet" href="bower_components/template/dist/angular-motion.css" />
+  <link rel="stylesheet" href="bower_components/template/dist/themify-icons.css" />
+  <link rel="stylesheet" href="bower_components/template/dist/font-awesome.min.css" />
+  <link rel="stylesheet" href="bower_components/template/dist/font.css" />
+  <link rel="stylesheet" href="bower_components/template/dist/app.css" />
+  <link rel="stylesheet" href="bower_components/template/dist/loading-bar.css" />
+  <link rel="stylesheet" href="bower_components/template/dist/customstyles.css" />
+  <link rel="stylesheet" href="bower_components/template/dist/timeLine.css" />
+  <link rel="stylesheet" href="bower_components/template/dist/colors.css" />
+  <link rel="stylesheet" href="bower_components/bootstrap-material-design/dist/css/material.css" />
+  <link rel="stylesheet" href="bower_components/bootstrap-material-design/dist/css/ripples.css" />
+  <link rel="stylesheet" href="bower_components/bootstrap-material-design/dist/css/material-fullpalette.css" />
+  <!-- endbower -->
+  <!-- endbuild -->
+</head>
+<body class="no-padding">
+
+
+
+
+  
+  <!-- content -->
+  
+  <div  id="content" role="main" class="h-full" ui-view>
+
+  </div>
+  <!-- / content -->
+
+  <!-- footer -->
+<!--   <footer id="footer" class="app-footer" role="footer" ng-include="'views/footer.html'">
+  </footer> -->
+
+
+
+
+  <!-- Livereload script for development only (stripped during dist build) -->
+  <script src="http://localhost:35729/livereload.js" data-concat="false"></script>
+
+  <!-- build:js(.) js/script.min.js -->
+  <!-- bower:js -->
+  <script src="bower_components/jquery/jquery.js"></script>
+  <script src="bower_components/underscore/underscore.js"></script>
+  <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+  <script src="bower_components/angular-animate/angular-animate.js"></script>
+  <script src="bower_components/angular-resource/angular-resource.js"></script>
+  <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+  <script src="bower_components/angular-mocks/angular-mocks.js"></script>
+  <script src="bower_components/angular-ui-utils/ui-utils.js"></script>
+  <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+  <script src="bower_components/moment/moment.js"></script>
+  <script src="bower_components/template/dist/template.min.js"></script>
+  <script src="bower_components/bootstrap-material-design/dist/js/material.js"></script>
+  <script src="bower_components/bootstrap-material-design/dist/js/ripples.js"></script>
+  <script src="bower_components/ngCordova/dist/ng-cordova.js"></script>
+  <script src="bower_components/angular-local-storage/dist/angular-local-storage.js"></script>
+  <script src="bower_components/ngstorage/ngStorage.js"></script>
+  <script src="bower_components/angular-touch/angular-touch.js"></script>
+  <!-- endbower -->
+
+  <!-- Main App JS -->
+  <script type="text/javascript" src="cordova.js"></script>
+  <script src="app.js"></script>
+  <script src="angularModules/home/partials/Partial-home.js"></script>
+  <script src="angularModules/splashScreen/partials/Partial-splash.js"></script>
+  <script src="angularModules/common/hideForSplash/directives/Directive-hideForSplash.js"></script>
+  <script src="angularModules/login/partials/Partial-login.js"></script>
+  <script src="angularModules/appHome/partials/Partial-app.js"></script>
+  <script src="angularModules/login/services/Service-login.js"></script>
+  <!-- Add New Component JS Above -->
+  <!-- endbuild -->
+<script type="text/javascript">
+
+// document.addEventListener("deviceready", function () {
+//   alert('ready');
+// }, false);
+</script>
+
+</body>
+</html>
