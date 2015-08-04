@@ -2,9 +2,9 @@
 Key store for candidate app is at 
    lmsCandidate/platforms/android/ant-build
 
-   Keystore Name : lmsParent.keystore
-   Keystore alias : lmsParent
-   Password is  : lmsparent
+   Keystore Name : baabtraParent.keystore
+   Keystore alias : baabtraParent
+   Password is  : baabtraparent
 
 
 Change the version number in config.xml file before building release version of apk.
@@ -21,16 +21,16 @@ then change directory to lmsCandidate
 cordova build android --release
 
 4)
-Change directory to lmsCandidate/platforms/android/ant-build/
+Change directory to sourceCandidate/platforms/android/ant-build/
 
 5)
-jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore lmsParent.keystore CordovaApp-release-unsigned.apk lmsParent
+jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore baabtraParent.keystore CordovaApp-release-unsigned.apk baabtraParent
 
 6)
-zipalign -v 4 CordovaApp-release-unsigned.apk 99lmsParent.apk 
+zipalign -v 4 CordovaApp-release-unsigned.apk baabtraParent.apk 
 ===========================================
 
 
-Work on the angular app inside 99lmsCandidate,
+Work on the angular app inside baabtraCandidate,
 
   change directory path to 99lmsCandidate then type the command "ripple emulate" , then you can access the app through browser.

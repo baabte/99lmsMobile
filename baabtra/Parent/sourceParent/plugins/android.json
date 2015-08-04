@@ -33,10 +33,10 @@
     },
     "installed_plugins": {
         "cordova-plugin-dialogs": {
-            "PACKAGE_NAME": "io.cordova.hellocordova"
+            "PACKAGE_NAME": "com.baabtra.parent"
         },
         "cordova-plugin-network-information": {
-            "PACKAGE_NAME": "io.cordova.hellocordova"
+            "PACKAGE_NAME": "com.baabtra.parent"
         }
     },
     "dependent_plugins": {}

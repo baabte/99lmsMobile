@@ -2,6 +2,7 @@ angular.module('candidate').controller('LoginCtrl',['login','$scope','$rootScope
 $scope.data={};
 // $scope.data.socialData = '';
 $scope.data.from_where="direct";
+$scope.data.domainName = 'baabtra.99lms.com';
 $scope.loginFn = function() {
 	var promise = login.fnloginService($scope.data);
 	promise.then(function (response) {
@@ -26,7 +27,7 @@ $scope.loginFn = function() {
 						);	
       			}
 
-      			else if(!angular.equals($scope.logData.ActiveUserData.roleMappingObj.fkRoleId,5)){ //id of parent role
+      			else if(!angular.equals($scope.logData.ActiveUserData.roleMappingObj.fkRoleId,5)){
       				// console.log($scope.logData.ActiveUserData.roleMappingObj);
       				navigator.notification.alert(
 						'Invalid username or password, Please try again. ',// message

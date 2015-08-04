@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.baabtelms.parent" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="com.baabtra.parent" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <preference name="loglevel" value="DEBUG" />
     <feature name="Notification">
         <param name="android-package" value="org.apache.cordova.dialogs.Notification" />
@@ -7,12 +7,12 @@
     <feature name="NetworkStatus">
         <param name="android-package" value="org.apache.cordova.networkinformation.NetworkManager" />
     </feature>
-    <name>Parent 99LMS</name>
+    <name>Parent baabtra.com</name>
     <description>
-        LMS Application for parents.
+        Baabtra Application for parents.
     </description>
-    <author email="support@99lms.com" href="http://99lms.com">
-        99LMS team.
+    <author email="info@baabtra.com" href="http://baabtra.com">
+        baabtra.com team.
     </author>
     <content src="index.html" />
     <access origin="*" />

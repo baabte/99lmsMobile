@@ -27,7 +27,7 @@ $scope.loginFn = function() {
 						);	
       			}
 
-      			else if(!angular.equals($scope.logData.ActiveUserData.roleMappingObj.fkRoleId,5)){ //id of parent role
+      			else if(!angular.equals($scope.logData.ActiveUserData.roleMappingObj.fkRoleId,5)){
       				// console.log($scope.logData.ActiveUserData.roleMappingObj);
       				navigator.notification.alert(
 						'Invalid username or password, Please try again. ',// message
