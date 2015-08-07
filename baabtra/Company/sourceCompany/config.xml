@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.baabtra.company" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Company baabtra.com</name>
+    <description>
+        Baabtra Application for parents.
+    </description>
+    <author email="info@baabtra.com" href="http://baabtra.com">
+        baabtra.com team.
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+</widget>

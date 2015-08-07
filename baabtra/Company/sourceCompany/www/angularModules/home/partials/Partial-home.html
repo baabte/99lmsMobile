@@ -1,0 +1,25 @@
+<div class="col-md-12 no-padding">
+  <!-- header -->
+  <header style="z-index:1050;" id="header" class="app-header  navbar bg-99lms-blue " role="menu" >
+  	<span class="pull-right">
+  		<i class="mdi-action-exit-to-app p" ng-click="logout()"></i>
+  		<i class="mdi-alert-error p" ng-click="info()"></i>
+  	</span>
+  </header>
+  <!-- / header -->
+
+
+<!-- home screen -->
+<div class="col-md-12 bg-light h-full p">
+	<button ng-click="openApp()" class="shadow-z-1 col-xs-12 btn btn-99lms-blue p m-t text-white">
+		<span class="pull-left">Home</span>
+		<i class="mdi-action-language pull-right"></i>
+	</button>
+	<button class="shadow-z-1 col-xs-12 btn btn-99lms-blue p m-t text-white" ng-disabled="true">
+		<span class="pull-left">Offline materials</span>
+		 <i class="mdi-device-signal-cellular-connected-no-internet-2-bar pull-right"></i>
+	</button>
+</div>
+<!-- end home screen -->
+
+</div>

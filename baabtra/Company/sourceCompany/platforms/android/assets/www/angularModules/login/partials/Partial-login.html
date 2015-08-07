@@ -1,0 +1,24 @@
+<div class="col-md-12 no-padding">
+  <!-- header -->
+  <!-- <header ng-show="!$root.hide" style="z-index:1050;" id="header" hide-for-splash class="app-header  navbar bg-99lms-blue" role="menu" >
+  </header> -->
+  <!-- / header -->
+<form name="login" no-validate>
+<div class="col-md-12 bg-light h-full p">
+	<div class="shadow-z-1 col-xs-12 bg-white p m-t">
+		<!-- <div class="form-group">
+    		<input ng-model="data.domainName" required class="form-control floating-label" type="text" placeholder="Enter url (demo.99lms.com)">
+		</div> -->
+		<div class="form-group">
+    		<input ng-model="data.loginCredential.userName" required class="form-control floating-label" type="text" placeholder="User name/Email">
+		</div>
+		<div class="form-group">
+    		<input ng-model="data.loginCredential.password" required class="form-control floating-label" type="password" placeholder="Password">
+		</div>
+		<div class="form-group text-center text-white">
+    		<input  ng-disabled="login.$invalid" class="btn btn-99lms-blue" ng-click="loginFn()" type="submit" value="Login">
+		</div>
+	</div>
+</div>
+</form>
+</div>
